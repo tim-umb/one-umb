@@ -25,9 +25,25 @@ import Vector7Image from 'src/assets/images/mainPage_Vector_7.png';
 import Vector8Image from 'src/assets/images/mainPage_Vector_8.png';
 import Vector9Image from 'src/assets/images/mainPage_Vector_9.png';
 import Vector10Image from 'src/assets/images/mainPage_Vector_10.png';
+import Vector11Image from 'src/assets/images/mainPage_Vector_11.png';
+import Vector12Image from 'src/assets/images/mainPage_Vector_12.png';
+import Vector13Image from 'src/assets/images/mainPage_Vector_13.png';
+import Vector14Image from 'src/assets/images/mainPage_Vector_14.png';
+import Vector15Image from 'src/assets/images/mainPage_Vector_15.png';
+import Vector16Image from 'src/assets/images/mainPage_Vector_16.png';
+import Vector17Image from 'src/assets/images/mainPage_Vector_17.png';
+import Vector18Image from 'src/assets/images/mainPage_Vector_18.png';
+import Vector19Image from 'src/assets/images/mainPage_Vector_19.png';
+import Vector20Image from 'src/assets/images/mainPage_Vector_20.png';
+import Vector21Image from 'src/assets/images/mainPage_Vector_21.png';
+import Vector22Image from 'src/assets/images/mainPage_Vector_22.png';
+import Vector23Image from 'src/assets/images/mainPage_Vector_23.png';
+import Vector24Image from 'src/assets/images/mainPage_Vector_24.png';
+import Vector25Image from 'src/assets/images/mainPage_Vector_25.png';
+import Vector26Image from 'src/assets/images/mainPage_Vector_26.png';
 import { styled } from '@mui/material/styles';
+import DataGrid from 'src/components/DataGrid/DataGrid';
 import { MainPageProps } from 'src/types';
-import DataGridDemo from '../DataGrid';
 
 const MainPage1: any = styled('div')({
   backgroundColor: `rgba(255, 255, 255, 1)`,
@@ -1259,29 +1275,42 @@ const Frame34: any = styled('div')(({ theme }: any) => ({
   margin: `0px`,
 }));
 
-const Frame21: any = styled('div')(({ theme }: any) => ({
-  backgroundColor: `rgba(255, 255, 255, 1)`,
-  boxShadow: `0px 2px 4px rgba(0, 0, 0, 0.2), 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12)`,
-  borderRadius: `0px`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `column`,
-  justifyContent: `flex-start`,
-  alignItems: `flex-start`,
-  padding: `0px`,
-  boxSizing: `border-box`,
-  alignSelf: `stretch`,
-  margin: `0px`,
-  maxWidth: '1440px',
-}));
-
 const Frame16: any = styled('div')({
   borderRadius: `0px`,
   display: `flex`,
   position: `relative`,
   isolation: `isolate`,
   flexDirection: `column`,
+  justifyContent: `flex-start`,
+  alignItems: `center`,
+  padding: `0px`,
+  boxSizing: `border-box`,
+  alignSelf: `stretch`,
+  flex: `1`,
+  margin: `0px`,
+});
+
+const DataGridHeader: any = styled('div')(({ theme }: any) => ({
+  backgroundColor: `rgba(0, 60, 110, 1)`,
+  borderRadius: `0px`,
+  display: `flex`,
+  position: `relative`,
+  isolation: `isolate`,
+  flexDirection: `column`,
+  justifyContent: `flex-start`,
+  alignItems: `center`,
+  padding: `12px 16px`,
+  boxSizing: `border-box`,
+  alignSelf: `stretch`,
+  margin: `0px`,
+}));
+
+const Typography16: any = styled('div')({
+  borderRadius: `0px`,
+  display: `flex`,
+  position: `relative`,
+  isolation: `isolate`,
+  flexDirection: `row`,
   justifyContent: `flex-start`,
   alignItems: `flex-start`,
   padding: `0px`,
@@ -1290,24 +1319,10 @@ const Frame16: any = styled('div')({
   margin: `0px`,
 });
 
-const Frame17: any = styled('div')(({ theme }: any) => ({
-  backgroundColor: `rgba(0, 60, 110, 1)`,
-  borderRadius: `0px`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `column`,
-  justifyContent: `flex-start`,
-  alignItems: `flex-start`,
-  padding: `12px 16px`,
-  boxSizing: `border-box`,
-  alignSelf: `stretch`,
-  margin: `0px`,
-}));
-
-const Typography16: any = styled(Typography)(({ theme }: any) => ({
-  alignSelf: `stretch`,
-  margin: `0px`,
+const Typography17: any = styled('div')(({ theme }: any) => ({
+  textAlign: `left`,
+  whiteSpace: `pre-wrap`,
+  fontSynthesis: `none`,
   color: `rgba(255, 255, 255, 1)`,
   fontStyle: `normal`,
   fontFamily: `Roboto`,
@@ -1317,6 +1332,29 @@ const Typography16: any = styled(Typography)(({ theme }: any) => ({
   textDecoration: `none`,
   lineHeight: `150%`,
   textTransform: `none`,
+  margin: `0px`,
+}));
+
+const DataGridContainer: any = styled('div')({
+  borderRadius: `0px`,
+  display: `flex`,
+  position: `relative`,
+  isolation: `isolate`,
+  flexDirection: `column`,
+  justifyContent: `flex-start`,
+  alignItems: `center`,
+  padding: `0px`,
+  boxSizing: `border-box`,
+  alignSelf: `stretch`,
+  flex: `1`,
+  margin: `0px`,
+  overflow: `hidden`,
+});
+
+const DataGrid1: any = styled(DataGrid)(({ theme }: any) => ({
+  alignSelf: `stretch`,
+  flex: `1`,
+  margin: `0px`,
 }));
 
 const Frame18: any = styled('div')({
@@ -1729,7 +1767,7 @@ const Frame: any = styled('div')(({ theme }: any) => ({
   margin: `0px`,
 }));
 
-const DataGridHeader: any = styled('div')({
+const DataGridHeader1: any = styled('div')({
   borderRadius: `0px`,
   display: `flex`,
   position: `relative`,
@@ -1758,7 +1796,7 @@ const Container5: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography17: any = styled('div')({
+const Typography18: any = styled('div')({
   borderRadius: `0px`,
   display: `flex`,
   position: `relative`,
@@ -1771,7 +1809,7 @@ const Typography17: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography18: any = styled('div')(({ theme }: any) => ({
+const Typography19: any = styled('div')(({ theme }: any) => ({
   textAlign: `left`,
   whiteSpace: `pre-wrap`,
   fontSynthesis: `none`,
@@ -1849,7 +1887,7 @@ const Separator: any = styled('div')(({ theme }: any) => ({
   top: `5px`,
 }));
 
-const DataGridHeader1: any = styled('div')({
+const DataGridHeader2: any = styled('div')({
   borderRadius: `0px`,
   display: `flex`,
   position: `relative`,
@@ -1878,7 +1916,7 @@ const Container6: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography19: any = styled('div')({
+const Typography20: any = styled('div')({
   borderRadius: `0px`,
   display: `flex`,
   position: `relative`,
@@ -1891,7 +1929,7 @@ const Typography19: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography20: any = styled('div')(({ theme }: any) => ({
+const Typography21: any = styled('div')(({ theme }: any) => ({
   textAlign: `left`,
   whiteSpace: `pre-wrap`,
   fontSynthesis: `none`,
@@ -1969,7 +2007,7 @@ const Separator1: any = styled('div')(({ theme }: any) => ({
   top: `5px`,
 }));
 
-const DataGridHeader2: any = styled('div')({
+const DataGridHeader3: any = styled('div')({
   borderRadius: `0px`,
   display: `flex`,
   position: `relative`,
@@ -1998,7 +2036,7 @@ const Container7: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography21: any = styled('div')({
+const Typography22: any = styled('div')({
   borderRadius: `0px`,
   display: `flex`,
   position: `relative`,
@@ -2011,7 +2049,7 @@ const Typography21: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography22: any = styled('div')(({ theme }: any) => ({
+const Typography23: any = styled('div')(({ theme }: any) => ({
   textAlign: `left`,
   whiteSpace: `pre-wrap`,
   fontSynthesis: `none`,
@@ -2089,7 +2127,7 @@ const Separator2: any = styled('div')(({ theme }: any) => ({
   top: `5px`,
 }));
 
-const DataGridHeader3: any = styled('div')({
+const DataGridHeader4: any = styled('div')({
   borderRadius: `0px`,
   display: `flex`,
   position: `relative`,
@@ -2118,7 +2156,7 @@ const Container8: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography23: any = styled('div')({
+const Typography24: any = styled('div')({
   borderRadius: `0px`,
   display: `flex`,
   position: `relative`,
@@ -2131,7 +2169,7 @@ const Typography23: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography24: any = styled('div')(({ theme }: any) => ({
+const Typography25: any = styled('div')(({ theme }: any) => ({
   textAlign: `left`,
   whiteSpace: `pre-wrap`,
   fontSynthesis: `none`,
@@ -2209,7 +2247,7 @@ const Separator3: any = styled('div')(({ theme }: any) => ({
   top: `5px`,
 }));
 
-const DataGridHeader4: any = styled('div')({
+const DataGridHeader5: any = styled('div')({
   borderRadius: `0px`,
   display: `flex`,
   position: `relative`,
@@ -2238,7 +2276,7 @@ const Container9: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography25: any = styled('div')({
+const Typography26: any = styled('div')({
   borderRadius: `0px`,
   display: `flex`,
   position: `relative`,
@@ -2251,7 +2289,7 @@ const Typography25: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography26: any = styled('div')(({ theme }: any) => ({
+const Typography27: any = styled('div')(({ theme }: any) => ({
   textAlign: `left`,
   whiteSpace: `pre-wrap`,
   fontSynthesis: `none`,
@@ -2329,7 +2367,7 @@ const Separator4: any = styled('div')(({ theme }: any) => ({
   top: `5px`,
 }));
 
-const DataGridHeader5: any = styled('div')({
+const DataGridHeader6: any = styled('div')({
   borderRadius: `0px`,
   display: `flex`,
   position: `relative`,
@@ -2358,7 +2396,7 @@ const Container10: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography27: any = styled('div')({
+const Typography28: any = styled('div')({
   borderRadius: `0px`,
   display: `flex`,
   position: `relative`,
@@ -2371,7 +2409,7 @@ const Typography27: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography28: any = styled('div')(({ theme }: any) => ({
+const Typography29: any = styled('div')(({ theme }: any) => ({
   textAlign: `left`,
   whiteSpace: `pre-wrap`,
   fontSynthesis: `none`,
@@ -2453,7 +2491,7 @@ const DataGridCell: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography29: any = styled(Typography)(({ theme }: any) => ({
+const Typography30: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
   color: `rgba(0, 0, 0, 0.87)`,
   fontStyle: `normal`,
@@ -2481,7 +2519,7 @@ const DataGridCell1: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography30: any = styled(Typography)(({ theme }: any) => ({
+const Typography31: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
   color: `rgba(0, 0, 0, 0.87)`,
   fontStyle: `normal`,
@@ -2509,7 +2547,7 @@ const DataGridCell2: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography31: any = styled(Typography)(({ theme }: any) => ({
+const Typography32: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
   color: `rgba(0, 0, 0, 0.87)`,
   fontStyle: `normal`,
@@ -2537,7 +2575,7 @@ const DataGridCell3: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography32: any = styled(Typography)(({ theme }: any) => ({
+const Typography33: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
   color: `rgba(0, 0, 0, 0.87)`,
   fontStyle: `normal`,
@@ -2565,7 +2603,7 @@ const DataGridCell4: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography33: any = styled(Typography)(({ theme }: any) => ({
+const Typography34: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
   color: `rgba(0, 0, 0, 0.87)`,
   fontStyle: `normal`,
@@ -2593,7 +2631,7 @@ const DataGridCell5: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography34: any = styled(Typography)(({ theme }: any) => ({
+const Typography35: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
   color: `rgba(0, 0, 0, 0.87)`,
   fontStyle: `normal`,
@@ -2664,7 +2702,7 @@ const DataGridCell6: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography35: any = styled(Typography)(({ theme }: any) => ({
+const Typography36: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
   color: `rgba(0, 0, 0, 0.87)`,
   fontStyle: `normal`,
@@ -2692,7 +2730,7 @@ const DataGridCell7: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography36: any = styled(Typography)(({ theme }: any) => ({
+const Typography37: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
   color: `rgba(0, 0, 0, 0.87)`,
   fontStyle: `normal`,
@@ -2720,7 +2758,7 @@ const DataGridCell8: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography37: any = styled(Typography)(({ theme }: any) => ({
+const Typography38: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
   color: `rgba(0, 0, 0, 0.87)`,
   fontStyle: `normal`,
@@ -2748,7 +2786,7 @@ const DataGridCell9: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography38: any = styled(Typography)(({ theme }: any) => ({
+const Typography39: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
   color: `rgba(0, 0, 0, 0.87)`,
   fontStyle: `normal`,
@@ -2776,7 +2814,7 @@ const DataGridCell10: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography39: any = styled(Typography)(({ theme }: any) => ({
+const Typography40: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
   color: `rgba(0, 0, 0, 0.87)`,
   fontStyle: `normal`,
@@ -2804,7 +2842,7 @@ const DataGridCell11: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography40: any = styled(Typography)(({ theme }: any) => ({
+const Typography41: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
   color: `rgba(0, 0, 0, 0.87)`,
   fontStyle: `normal`,
@@ -2875,7 +2913,7 @@ const DataGridCell12: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography41: any = styled(Typography)(({ theme }: any) => ({
+const Typography42: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
   color: `rgba(0, 0, 0, 0.87)`,
   fontStyle: `normal`,
@@ -2903,7 +2941,7 @@ const DataGridCell13: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography42: any = styled(Typography)(({ theme }: any) => ({
+const Typography43: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
   color: `rgba(0, 0, 0, 0.87)`,
   fontStyle: `normal`,
@@ -2931,7 +2969,7 @@ const DataGridCell14: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography43: any = styled(Typography)(({ theme }: any) => ({
+const Typography44: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
   color: `rgba(0, 0, 0, 0.87)`,
   fontStyle: `normal`,
@@ -2959,7 +2997,7 @@ const DataGridCell15: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography44: any = styled(Typography)(({ theme }: any) => ({
+const Typography45: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
   color: `rgba(0, 0, 0, 0.87)`,
   fontStyle: `normal`,
@@ -2987,7 +3025,7 @@ const DataGridCell16: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography45: any = styled(Typography)(({ theme }: any) => ({
+const Typography46: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
   color: `rgba(0, 0, 0, 0.87)`,
   fontStyle: `normal`,
@@ -3015,7 +3053,7 @@ const DataGridCell17: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography46: any = styled(Typography)(({ theme }: any) => ({
+const Typography47: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
   color: `rgba(0, 0, 0, 0.87)`,
   fontStyle: `normal`,
@@ -3086,7 +3124,7 @@ const DataGridCell18: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography47: any = styled(Typography)(({ theme }: any) => ({
+const Typography48: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
   color: `rgba(0, 0, 0, 0.87)`,
   fontStyle: `normal`,
@@ -3114,7 +3152,7 @@ const DataGridCell19: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography48: any = styled(Typography)(({ theme }: any) => ({
+const Typography49: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
   color: `rgba(0, 0, 0, 0.87)`,
   fontStyle: `normal`,
@@ -3142,7 +3180,7 @@ const DataGridCell20: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography49: any = styled(Typography)(({ theme }: any) => ({
+const Typography50: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
   color: `rgba(0, 0, 0, 0.87)`,
   fontStyle: `normal`,
@@ -3170,7 +3208,7 @@ const DataGridCell21: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography50: any = styled(Typography)(({ theme }: any) => ({
+const Typography51: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
   color: `rgba(0, 0, 0, 0.87)`,
   fontStyle: `normal`,
@@ -3198,7 +3236,7 @@ const DataGridCell22: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography51: any = styled(Typography)(({ theme }: any) => ({
+const Typography52: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
   color: `rgba(0, 0, 0, 0.87)`,
   fontStyle: `normal`,
@@ -3226,7 +3264,7 @@ const DataGridCell23: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography52: any = styled(Typography)(({ theme }: any) => ({
+const Typography53: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
   color: `rgba(0, 0, 0, 0.87)`,
   fontStyle: `normal`,
@@ -3473,11 +3511,6 @@ const Vector26: any = styled('img')({
   top: `6px`,
 });
 
-const DataGridContainer: any = styled('div')({
-  width: '100%',
-  maxWidth: '1440px'
-});
-
 function MainPage(props: MainPageProps): JSX.Element {
   return (
     <MainPage1 className={props.className}>
@@ -3656,18 +3689,390 @@ function MainPage(props: MainPageProps): JSX.Element {
         </Frame31>
       </Frame33>
       <Frame34>
-        <Frame21>
-          <Frame16>
-            <Frame17>
-              <Typography16 variant={'body1'} gutterBottom={false}>
-                {'TRADE SOLUTIONS'}
-              </Typography16>
-            </Frame17>
-            <DataGridContainer>
-              <DataGridDemo></DataGridDemo>
-            </DataGridContainer>
-          </Frame16>
-        </Frame21>
+        <Frame16>
+          <DataGridHeader>
+            <Typography16>
+              <Typography17>{`TRADE SOLUTIONS`}</Typography17>
+            </Typography16>
+          </DataGridHeader>
+          <DataGridContainer>
+            <DataGrid1 />
+          </DataGridContainer>
+          {false && (
+            <Frame18>
+              <AchFIleGrid>
+                <DataGridAggregation>
+                  <Button6>
+                    <Base>
+                      <MaskedIcon>
+                        <IconViewColumn>
+                          {false && (
+                            <Vector11
+                              src={Vector11Image}
+                              loading="lazy"
+                              alt={'Vector'}
+                            />
+                          )}
+                          <Vector12
+                            src={Vector12Image}
+                            loading="lazy"
+                            alt={'Vector'}
+                          />
+                        </IconViewColumn>
+                      </MaskedIcon>
+                      <Button7>{`columns`}</Button7>
+                    </Base>
+                  </Button6>
+                  <Button8>
+                    <Base1>
+                      <MaskedIcon1>
+                        <FilterListFilled>
+                          <Vector13
+                            src={Vector13Image}
+                            loading="lazy"
+                            alt={'Vector'}
+                          />
+                        </FilterListFilled>
+                      </MaskedIcon1>
+                      <Button9>{`filters`}</Button9>
+                    </Base1>
+                  </Button8>
+                  <Button10>
+                    <Base2>
+                      <MaskedIcon2>
+                        <IconTableRows>
+                          {false && (
+                            <Vector14
+                              src={Vector14Image}
+                              loading="lazy"
+                              alt={'Vector'}
+                            />
+                          )}
+                          <Vector15
+                            src={Vector15Image}
+                            loading="lazy"
+                            alt={'Vector'}
+                          />
+                        </IconTableRows>
+                      </MaskedIcon2>
+                      <Button11>{`density`}</Button11>
+                    </Base2>
+                  </Button10>
+                  <Button12>
+                    <Base3>
+                      <MaskedIcon3>
+                        <IconSaveAlt>
+                          {false && (
+                            <Vector16
+                              src={Vector16Image}
+                              loading="lazy"
+                              alt={'Vector'}
+                            />
+                          )}
+                          <Vector17
+                            src={Vector17Image}
+                            loading="lazy"
+                            alt={'Vector'}
+                          />
+                        </IconSaveAlt>
+                      </MaskedIcon3>
+                      <Button13>{`export`}</Button13>
+                    </Base3>
+                  </Button12>
+                </DataGridAggregation>
+                <Frame>
+                  <DataGridHeader1>
+                    <Container5>
+                      <Typography18>
+                        <Typography19>{`Date/Time (CST)`}</Typography19>
+                      </Typography18>
+                      <Icon12>
+                        <ArrowUpwardFilled>
+                          <Vector18
+                            src={Vector18Image}
+                            loading="lazy"
+                            alt={'Vector'}
+                          />
+                        </ArrowUpwardFilled>
+                      </Icon12>
+                    </Container5>
+                    <SeparatorContainer>
+                      <Separator></Separator>
+                    </SeparatorContainer>
+                  </DataGridHeader1>
+                  <DataGridHeader2>
+                    <Container6>
+                      <Typography20>
+                        <Typography21>{`Profile Name`}</Typography21>
+                      </Typography20>
+                      <Icon13>
+                        <ArrowUpwardFilled1>
+                          <Vector19
+                            src={Vector19Image}
+                            loading="lazy"
+                            alt={'Vector'}
+                          />
+                        </ArrowUpwardFilled1>
+                      </Icon13>
+                    </Container6>
+                    <SeparatorContainer1>
+                      <Separator1></Separator1>
+                    </SeparatorContainer1>
+                  </DataGridHeader2>
+                  <DataGridHeader3>
+                    <Container7>
+                      <Typography22>
+                        <Typography23>{`Last Path/Filename`}</Typography23>
+                      </Typography22>
+                      <Icon14>
+                        <ArrowUpwardFilled2>
+                          <Vector20
+                            src={Vector20Image}
+                            loading="lazy"
+                            alt={'Vector'}
+                          />
+                        </ArrowUpwardFilled2>
+                      </Icon14>
+                    </Container7>
+                    <SeparatorContainer2>
+                      <Separator2></Separator2>
+                    </SeparatorContainer2>
+                  </DataGridHeader3>
+                  <DataGridHeader4>
+                    <Container8>
+                      <Typography24>
+                        <Typography25>{`User ID`}</Typography25>
+                      </Typography24>
+                      <Icon15>
+                        <ArrowUpwardFilled3>
+                          <Vector21
+                            src={Vector21Image}
+                            loading="lazy"
+                            alt={'Vector'}
+                          />
+                        </ArrowUpwardFilled3>
+                      </Icon15>
+                    </Container8>
+                    <SeparatorContainer3>
+                      <Separator3></Separator3>
+                    </SeparatorContainer3>
+                  </DataGridHeader4>
+                  <DataGridHeader5>
+                    <Container9>
+                      <Typography26>
+                        <Typography27>{`File Size`}</Typography27>
+                      </Typography26>
+                      <Icon16>
+                        <ArrowUpwardFilled4>
+                          <Vector22
+                            src={Vector22Image}
+                            loading="lazy"
+                            alt={'Vector'}
+                          />
+                        </ArrowUpwardFilled4>
+                      </Icon16>
+                    </Container9>
+                    <SeparatorContainer4>
+                      <Separator4></Separator4>
+                    </SeparatorContainer4>
+                  </DataGridHeader5>
+                  <DataGridHeader6>
+                    <Container10>
+                      <Typography28>
+                        <Typography29>{`Status`}</Typography29>
+                      </Typography28>
+                      <Icon17>
+                        <ArrowUpwardFilled5>
+                          <Vector23
+                            src={Vector23Image}
+                            loading="lazy"
+                            alt={'Vector'}
+                          />
+                        </ArrowUpwardFilled5>
+                      </Icon17>
+                    </Container10>
+                  </DataGridHeader6>
+                </Frame>
+                <Frame4>
+                  <DataGridCell>
+                    <Typography30 variant={'body2'} gutterBottom={false}>
+                      {'10/03/2023 18:49'}
+                    </Typography30>
+                  </DataGridCell>
+                  <DataGridCell1>
+                    <Typography31 variant={'body2'} gutterBottom={false}>
+                      {'MFAC DAILY EXPENSES'}
+                    </Typography31>
+                  </DataGridCell1>
+                  <DataGridCell2>
+                    <Typography32 variant={'body2'} gutterBottom={false}>
+                      {'10042023_MinthlyServiceFeesListjsonfian.csv'}
+                    </Typography32>
+                  </DataGridCell2>
+                  <DataGridCell3>
+                    <Typography33 variant={'body2'} gutterBottom={false}>
+                      {'mfac-jsonfian@mfac'}
+                    </Typography33>
+                  </DataGridCell3>
+                  <DataGridCell4>
+                    <Typography34 variant={'body2'} gutterBottom={false}>
+                      {'1KB'}
+                    </Typography34>
+                  </DataGridCell4>
+                  <DataGridCell5>
+                    <Typography35 variant={'body2'} gutterBottom={false}>
+                      {'Completed'}
+                    </Typography35>
+                  </DataGridCell5>
+                </Frame4>
+                <DividerHorizontal>
+                  <MinHeight></MinHeight>
+                </DividerHorizontal>
+                <Frame9>
+                  <DataGridCell6>
+                    <Typography36 variant={'body2'} gutterBottom={false}>
+                      {'10/03/2023 18:49'}
+                    </Typography36>
+                  </DataGridCell6>
+                  <DataGridCell7>
+                    <Typography37 variant={'body2'} gutterBottom={false}>
+                      {'MFAC DAILY EXPENSES'}
+                    </Typography37>
+                  </DataGridCell7>
+                  <DataGridCell8>
+                    <Typography38 variant={'body2'} gutterBottom={false}>
+                      {'10042023_MinthlyServiceFeesListjsonfian.csv'}
+                    </Typography38>
+                  </DataGridCell8>
+                  <DataGridCell9>
+                    <Typography39 variant={'body2'} gutterBottom={false}>
+                      {'mfac-jsonfian@mfac'}
+                    </Typography39>
+                  </DataGridCell9>
+                  <DataGridCell10>
+                    <Typography40 variant={'body2'} gutterBottom={false}>
+                      {'1KB'}
+                    </Typography40>
+                  </DataGridCell10>
+                  <DataGridCell11>
+                    <Typography41 variant={'body2'} gutterBottom={false}>
+                      {'Completed'}
+                    </Typography41>
+                  </DataGridCell11>
+                </Frame9>
+                <DividerHorizontal1>
+                  <MinHeight1></MinHeight1>
+                </DividerHorizontal1>
+                <Frame10>
+                  <DataGridCell12>
+                    <Typography42 variant={'body2'} gutterBottom={false}>
+                      {'10/03/2023 18:49'}
+                    </Typography42>
+                  </DataGridCell12>
+                  <DataGridCell13>
+                    <Typography43 variant={'body2'} gutterBottom={false}>
+                      {'MFAC DAILY EXPENSES'}
+                    </Typography43>
+                  </DataGridCell13>
+                  <DataGridCell14>
+                    <Typography44 variant={'body2'} gutterBottom={false}>
+                      {'10042023_MinthlyServiceFeesListjsonfian.csv'}
+                    </Typography44>
+                  </DataGridCell14>
+                  <DataGridCell15>
+                    <Typography45 variant={'body2'} gutterBottom={false}>
+                      {'mfac-jsonfian@mfac'}
+                    </Typography45>
+                  </DataGridCell15>
+                  <DataGridCell16>
+                    <Typography46 variant={'body2'} gutterBottom={false}>
+                      {'1KB'}
+                    </Typography46>
+                  </DataGridCell16>
+                  <DataGridCell17>
+                    <Typography47 variant={'body2'} gutterBottom={false}>
+                      {'Completed'}
+                    </Typography47>
+                  </DataGridCell17>
+                </Frame10>
+                <DividerHorizontal2>
+                  <MinHeight2></MinHeight2>
+                </DividerHorizontal2>
+                <Frame11>
+                  <DataGridCell18>
+                    <Typography48 variant={'body2'} gutterBottom={false}>
+                      {'10/03/2023 18:49'}
+                    </Typography48>
+                  </DataGridCell18>
+                  <DataGridCell19>
+                    <Typography49 variant={'body2'} gutterBottom={false}>
+                      {'MFAC DAILY EXPENSES'}
+                    </Typography49>
+                  </DataGridCell19>
+                  <DataGridCell20>
+                    <Typography50 variant={'body2'} gutterBottom={false}>
+                      {'10042023_MinthlyServiceFeesListjsonfian.csv'}
+                    </Typography50>
+                  </DataGridCell20>
+                  <DataGridCell21>
+                    <Typography51 variant={'body2'} gutterBottom={false}>
+                      {'mfac-jsonfian@mfac'}
+                    </Typography51>
+                  </DataGridCell21>
+                  <DataGridCell22>
+                    <Typography52 variant={'body2'} gutterBottom={false}>
+                      {'1KB'}
+                    </Typography52>
+                  </DataGridCell22>
+                  <DataGridCell23>
+                    <Typography53 variant={'body2'} gutterBottom={false}>
+                      {'Completed'}
+                    </Typography53>
+                  </DataGridCell23>
+                </Frame11>
+                <DividerHorizontal3>
+                  <MinHeight3></MinHeight3>
+                </DividerHorizontal3>
+                <TableFooter>
+                  <Container11>
+                    <RowsPerPage>{`Rows per page:`}</RowsPerPage>
+                    <Page>
+                      <Q10>{`10`}</Q10>
+                      <ArrowDropDownFilled5>
+                        <Vector24
+                          src={Vector24Image}
+                          loading="lazy"
+                          alt={'Vector'}
+                        />
+                      </ArrowDropDownFilled5>
+                    </Page>
+                  </Container11>
+                  <Q110Of100>{`1-5 of 13`}</Q110Of100>
+                  <Navigation>
+                    <IconButton>
+                      <ChevronLeftFilled>
+                        <Vector25
+                          src={Vector25Image}
+                          loading="lazy"
+                          alt={'Vector'}
+                        />
+                      </ChevronLeftFilled>
+                    </IconButton>
+                    <IconButton1>
+                      <ChevronRightFilled>
+                        <Vector26
+                          src={Vector26Image}
+                          loading="lazy"
+                          alt={'Vector'}
+                        />
+                      </ChevronRightFilled>
+                    </IconButton1>
+                  </Navigation>
+                </TableFooter>
+              </AchFIleGrid>
+            </Frame18>
+          )}
+        </Frame16>
       </Frame34>
     </MainPage1>
   );
