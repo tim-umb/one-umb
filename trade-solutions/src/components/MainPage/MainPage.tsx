@@ -42,7 +42,7 @@ import Vector24Image from 'src/assets/images/mainPage_Vector_24.png';
 import Vector25Image from 'src/assets/images/mainPage_Vector_25.png';
 import Vector26Image from 'src/assets/images/mainPage_Vector_26.png';
 import { styled } from '@mui/material/styles';
-import DataGridTradeSolutions from 'src/components/DataGrid';
+import DataGrid from 'src/components/DataGrid/DataGrid';
 import { MainPageProps } from 'src/types';
 
 const MainPage1: any = styled('div')({
@@ -1351,7 +1351,7 @@ const DataGridContainer: any = styled('div')({
   overflow: `hidden`,
 });
 
-const DataGrid1: any = styled(DataGridTradeSolutions)(({ theme }: any) => ({
+const DataGrid1: any = styled(DataGrid)(({ theme }: any) => ({
   alignSelf: `stretch`,
   flex: `1`,
   margin: `0px`,
@@ -3696,7 +3696,7 @@ function MainPage(props: MainPageProps): JSX.Element {
             </Typography16>
           </DataGridHeader>
           <DataGridContainer>
-            <DataGridTradeSolutions />
+            <DataGrid1 />
           </DataGridContainer>
           {false && (
             <Frame18>
