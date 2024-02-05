@@ -42,7 +42,7 @@ import Vector24Image from 'src/assets/images/mainPage_Vector_24.png';
 import Vector25Image from 'src/assets/images/mainPage_Vector_25.png';
 import Vector26Image from 'src/assets/images/mainPage_Vector_26.png';
 import { styled } from '@mui/material/styles';
-import DataGrid from 'src/components/DataGrid/DataGrid';
+import DataGridTrade from 'src/components/DataGridTrade/DataGridTrade';
 import { MainPageProps } from 'src/types';
 
 const MainPage1: any = styled('div')({
@@ -89,7 +89,6 @@ const Frame35: any = styled('div')({
   boxSizing: `border-box`,
   alignSelf: `stretch`,
   margin: `0px`,
-  maxWidth: '1440px',
 });
 
 const Typography1: any = styled(Typography)(({ theme }: any) => ({
@@ -133,7 +132,6 @@ const Frame28: any = styled('div')({
   boxSizing: `border-box`,
   alignSelf: `stretch`,
   margin: `0px`,
-  maxWidth: '1440px',
 });
 
 const Frame27: any = styled('div')({
@@ -692,7 +690,6 @@ const Frame31: any = styled('div')({
   boxSizing: `border-box`,
   alignSelf: `stretch`,
   margin: `0px`,
-  maxWidth: '1440px',
 });
 
 const Frame30: any = styled('div')({
@@ -1351,7 +1348,7 @@ const DataGridContainer: any = styled('div')({
   overflow: `hidden`,
 });
 
-const DataGrid1: any = styled(DataGrid)(({ theme }: any) => ({
+const DataGridTrade1: any = styled(DataGridTrade)(({ theme }: any) => ({
   alignSelf: `stretch`,
   flex: `1`,
   margin: `0px`,
@@ -3696,7 +3693,7 @@ function MainPage(props: MainPageProps): JSX.Element {
             </Typography16>
           </DataGridHeader>
           <DataGridContainer>
-            <DataGrid1 />
+            <DataGridTrade1 />
           </DataGridContainer>
           {false && (
             <Frame18>
