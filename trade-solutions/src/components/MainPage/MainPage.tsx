@@ -1265,7 +1265,7 @@ const Frame34: any = styled('div')(({ theme }: any) => ({
 const Frame16: any = styled('div')(({ theme }: any) => ({
   backgroundColor: `rgba(255, 255, 255, 1)`,
   boxShadow: `0px 2px 4px rgba(0, 0, 0, 0.2), 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12)`,
-  borderRadius: `0px`,
+  borderRadius: `4px`,
   display: `flex`,
   position: `relative`,
   isolation: `isolate`,
@@ -1282,7 +1282,7 @@ const Frame16: any = styled('div')(({ theme }: any) => ({
 
 const DataGridHeader: any = styled('div')(({ theme }: any) => ({
   backgroundColor: `rgba(0, 60, 110, 1)`,
-  borderRadius: `0px`,
+  borderRadius: `4px 4px 0px 0px`,
   display: `flex`,
   position: `relative`,
   isolation: `isolate`,
@@ -1326,7 +1326,7 @@ const Typography17: any = styled('div')(({ theme }: any) => ({
 }));
 
 const DataGridContainer: any = styled('div')({
-  borderRadius: `0px`,
+  borderRadius: `0px 0px 4px 4px`,
   display: `flex`,
   position: `relative`,
   isolation: `isolate`,
