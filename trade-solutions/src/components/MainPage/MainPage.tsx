@@ -26,7 +26,7 @@ import Vector8Image from 'src/assets/images/mainPage_Vector_8.png';
 import Vector9Image from 'src/assets/images/mainPage_Vector_9.png';
 import Vector10Image from 'src/assets/images/mainPage_Vector_10.png';
 import { styled } from '@mui/material/styles';
-import DataGridTrade from 'src/components/DataGridTrade/DataGridTrade';
+import DataGridTrade from '../DataGridTrade';
 import { MainPageProps } from 'src/types';
 
 const MainPage1: any = styled('div')({
