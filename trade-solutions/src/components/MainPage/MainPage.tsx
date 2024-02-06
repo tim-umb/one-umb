@@ -13,7 +13,7 @@
  **********************************************************************/
 
 import React from 'react';
-import { Typography } from '@mui/material';
+import { Typography, Button } from '@mui/material';
 import VectorImage from 'src/assets/images/mainPage_Vector.png';
 import Vector1Image from 'src/assets/images/mainPage_Vector_1.png';
 import Vector2Image from 'src/assets/images/mainPage_Vector_2.png';
@@ -1459,6 +1459,7 @@ function MainPage(props: MainPageProps): JSX.Element {
             </Frame29>
           </Frame30>
           <Frame32>
+            <Button variant="contained" color="primary">Template Download</Button>
             <ActionButton>
               <Icon7>
                 <FileDownloadOutlined>
