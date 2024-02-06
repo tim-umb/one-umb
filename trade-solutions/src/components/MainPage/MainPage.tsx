@@ -650,7 +650,7 @@ const Vector4: any = styled('img')({
 });
 
 const Frame33: any = styled('div')(({ theme }: any) => ({
-  backgroundColor: theme.palette['colors']['grey']['200'],
+  backgroundColor: theme.palette['colors']['grey']['300'],
   borderRadius: `0px`,
   display: `flex`,
   position: `relative`,
@@ -810,37 +810,9 @@ const IconLeft: any = styled(FileDownloadOutlinedIcon)(({ theme }: any) => ({
   width: `20px`,
 }));
 
-const Button6: any = styled(Button)(({ theme }: any) => ({
-  margin: `0px`,
-  color: theme.palette['_inherit']['textPrimary']['main'],
-  fontStyle: theme.typography['Components']['button-medium'].fontStyle,
-  fontFamily: theme.typography['Components']['button-medium'].fontFamily,
-  fontWeight: theme.typography['Components']['button-medium'].fontWeight,
-  fontSize: theme.typography['Components']['button-medium'].fontSize,
-  letterSpacing: theme.typography['Components']['button-medium'].letterSpacing,
-  lineHeight: theme.typography['Components']['button-medium'].lineHeight,
-  textDecoration:
-    theme.typography['Components']['button-medium'].textDecoration,
-  textTransform: theme.typography['Components']['button-medium'].textTransform,
-}));
-
 const IconLeft1: any = styled(FileUploadOutlinedIcon)(({ theme }: any) => ({
   height: `20px`,
   width: `20px`,
-}));
-
-const Button7: any = styled(Button)(({ theme }: any) => ({
-  margin: `0px 0px 0px 4px`,
-  color: theme.palette['_inherit']['textPrimary']['main'],
-  fontStyle: theme.typography['Components']['button-medium'].fontStyle,
-  fontFamily: theme.typography['Components']['button-medium'].fontFamily,
-  fontWeight: theme.typography['Components']['button-medium'].fontWeight,
-  fontSize: theme.typography['Components']['button-medium'].fontSize,
-  letterSpacing: theme.typography['Components']['button-medium'].letterSpacing,
-  lineHeight: theme.typography['Components']['button-medium'].lineHeight,
-  textDecoration:
-    theme.typography['Components']['button-medium'].textDecoration,
-  textTransform: theme.typography['Components']['button-medium'].textTransform,
 }));
 
 const IconLeft2: any = styled(RefreshOutlinedIcon)(({ theme }: any) => ({
@@ -848,37 +820,9 @@ const IconLeft2: any = styled(RefreshOutlinedIcon)(({ theme }: any) => ({
   width: `20px`,
 }));
 
-const Button8: any = styled(Button)(({ theme }: any) => ({
-  margin: `0px 0px 0px 4px`,
-  color: theme.palette['_inherit']['textPrimary']['main'],
-  fontStyle: theme.typography['Components']['button-medium'].fontStyle,
-  fontFamily: theme.typography['Components']['button-medium'].fontFamily,
-  fontWeight: theme.typography['Components']['button-medium'].fontWeight,
-  fontSize: theme.typography['Components']['button-medium'].fontSize,
-  letterSpacing: theme.typography['Components']['button-medium'].letterSpacing,
-  lineHeight: theme.typography['Components']['button-medium'].lineHeight,
-  textDecoration:
-    theme.typography['Components']['button-medium'].textDecoration,
-  textTransform: theme.typography['Components']['button-medium'].textTransform,
-}));
-
 const IconLeft3: any = styled(PrintIcon)(({ theme }: any) => ({
   height: `20px`,
   width: `20px`,
-}));
-
-const Button9: any = styled(Button)(({ theme }: any) => ({
-  margin: `0px 0px 0px 4px`,
-  color: theme.palette['_inherit']['textPrimary']['main'],
-  fontStyle: theme.typography['Components']['button-medium'].fontStyle,
-  fontFamily: theme.typography['Components']['button-medium'].fontFamily,
-  fontWeight: theme.typography['Components']['button-medium'].fontWeight,
-  fontSize: theme.typography['Components']['button-medium'].fontSize,
-  letterSpacing: theme.typography['Components']['button-medium'].letterSpacing,
-  lineHeight: theme.typography['Components']['button-medium'].lineHeight,
-  textDecoration:
-    theme.typography['Components']['button-medium'].textDecoration,
-  textTransform: theme.typography['Components']['button-medium'].textTransform,
 }));
 
 const IconLeft4: any = styled(QuestionMarkOutlinedIcon)(({ theme }: any) => ({
@@ -886,19 +830,6 @@ const IconLeft4: any = styled(QuestionMarkOutlinedIcon)(({ theme }: any) => ({
   width: `20px`,
 }));
 
-const Button10: any = styled(Button)(({ theme }: any) => ({
-  margin: `0px 0px 0px 4px`,
-  color: theme.palette['_inherit']['textPrimary']['main'],
-  fontStyle: theme.typography['Components']['button-medium'].fontStyle,
-  fontFamily: theme.typography['Components']['button-medium'].fontFamily,
-  fontWeight: theme.typography['Components']['button-medium'].fontWeight,
-  fontSize: theme.typography['Components']['button-medium'].fontSize,
-  letterSpacing: theme.typography['Components']['button-medium'].letterSpacing,
-  lineHeight: theme.typography['Components']['button-medium'].lineHeight,
-  textDecoration:
-    theme.typography['Components']['button-medium'].textDecoration,
-  textTransform: theme.typography['Components']['button-medium'].textTransform,
-}));
 
 const Frame34: any = styled('div')(({ theme }: any) => ({
   backgroundColor: theme.palette['colors']['grey']['200'],
@@ -998,6 +929,17 @@ const DataGridContainer: any = styled('div')({
 const DataGridTrade1: any = styled(DataGridTrade)(({ theme }: any) => ({
   alignSelf: `stretch`,
   margin: `0px`,
+}));
+
+const MenuButton = styled(Button)(({ theme }) => ({
+  boxShadow: 'none',
+  backgroundColor: 'transparent',
+  color: theme.palette['text']['secondary'],
+  transition: 'background-color 0s',
+    '&:hover': {
+      boxShadow: 'none',
+      backgroundColor: theme.palette['grey']['400'],
+    },
 }));
 
 function MainPage(props: MainPageProps): JSX.Element {
@@ -1113,7 +1055,7 @@ function MainPage(props: MainPageProps): JSX.Element {
               <Typography5>{`View and upload trade templates`}</Typography5>
             </Frame29>
             <Frame32>
-              <Button6
+              <MenuButton
                 size={'medium'}
                 color={'inherit'}
                 disabled={false}
@@ -1121,8 +1063,8 @@ function MainPage(props: MainPageProps): JSX.Element {
                 startIcon={<IconLeft />}
               >
                 {'Template Download'}
-              </Button6>
-              <Button7
+              </MenuButton>
+              <MenuButton
                 size={'medium'}
                 color={'inherit'}
                 disabled={false}
@@ -1130,8 +1072,8 @@ function MainPage(props: MainPageProps): JSX.Element {
                 startIcon={<IconLeft1 />}
               >
                 {'Template Upload'}
-              </Button7>
-              <Button8
+              </MenuButton>
+              <MenuButton
                 size={'medium'}
                 color={'inherit'}
                 disabled={false}
@@ -1139,8 +1081,8 @@ function MainPage(props: MainPageProps): JSX.Element {
                 startIcon={<IconLeft2 />}
               >
                 {'Refresh'}
-              </Button8>
-              <Button9
+              </MenuButton>
+              <MenuButton
                 size={'medium'}
                 color={'inherit'}
                 disabled={false}
@@ -1148,8 +1090,8 @@ function MainPage(props: MainPageProps): JSX.Element {
                 startIcon={<IconLeft3 />}
               >
                 {'Print'}
-              </Button9>
-              <Button10
+              </MenuButton>
+              <MenuButton
                 size={'medium'}
                 color={'inherit'}
                 disabled={false}
@@ -1157,7 +1099,7 @@ function MainPage(props: MainPageProps): JSX.Element {
                 startIcon={<IconLeft4 />}
               >
                 {'Help'}
-              </Button10>
+              </MenuButton>
             </Frame32>
           </Frame30>
         </Frame31>
