@@ -13,7 +13,7 @@
  **********************************************************************/
 
 import React from 'react';
-import { Typography, Button, SvgIcon } from '@mui/material';
+import { Typography, Button } from '@mui/material';
 import VectorImage from 'src/assets/images/mainPage_Vector.png';
 import Vector1Image from 'src/assets/images/mainPage_Vector_1.png';
 import Vector2Image from 'src/assets/images/mainPage_Vector_2.png';
