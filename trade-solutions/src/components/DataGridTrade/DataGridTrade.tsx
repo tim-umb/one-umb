@@ -48,7 +48,7 @@ const rows = [
 
 export default function DataGridTrade() {
   return (
-    <Box sx={{ height: 400, width: '100%' }}>
+    <Box sx={{ height: 'auto', width: '100%' }}>
       <DataGrid
         rows={rows}
         columns={columns}
