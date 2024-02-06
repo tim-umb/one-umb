@@ -677,8 +677,9 @@ const Frame31: any = styled('div')({
   padding: `0px`,
   boxSizing: `border-box`,
   alignSelf: `stretch`,
-  margin: `0px`,
+  margin: '0px auto',
   maxWidth: '1440px',
+  width: '100%',
 });
 
 const Frame30: any = styled('div')({
@@ -1273,8 +1274,9 @@ const Frame16: any = styled('div')({
   boxSizing: `border-box`,
   alignSelf: `stretch`,
   flex: `1`,
-  margin: `0px`,
+  margin: '0px auto',
   maxWidth: '1440px',
+  width: '100%',
 });
 
 const DataGridHeader: any = styled('div')(({ theme }: any) => ({
