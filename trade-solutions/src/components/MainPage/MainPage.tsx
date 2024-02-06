@@ -1275,7 +1275,7 @@ const Frame16: any = styled('div')(({ theme }: any) => ({
   padding: `0px`,
   boxSizing: `border-box`,
   alignSelf: `stretch`,
-  height: `448px`,
+  height: `fit-content`,
   margin: '0px auto',
   maxWidth: '1440px',
   width: '100%',
