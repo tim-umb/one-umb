@@ -13,7 +13,9 @@
  **********************************************************************/
 
 import React from 'react';
-import { Typography, Button } from '@mui/material';
+import { Typography, Button } from '@mui/material'
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
 import VectorImage from 'src/assets/images/mainPage_Vector.png';
 import Vector1Image from 'src/assets/images/mainPage_Vector_1.png';
 import Vector2Image from 'src/assets/images/mainPage_Vector_2.png';
@@ -179,17 +181,8 @@ const Frame20: any = styled('div')({
   margin: `0px`,
 });
 
-const Tab: any = styled('div')({
-  borderRadius: `0px`,
+const Tab0: any = styled('div')({
   display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `column`,
-  justifyContent: `flex-start`,
-  alignItems: `center`,
-  padding: `0px`,
-  boxSizing: `border-box`,
-  margin: `0px`,
 });
 
 const Tab1: any = styled('div')({
@@ -961,7 +954,7 @@ function MainPage(props: MainPageProps): JSX.Element {
             </Typography2>
           </Frame27>
           <Frame20>
-            <Tab>
+            <Tab0>
               <Tab1>
                 <Container>
                   <Button1>{`DASHBOARD`}</Button1>
@@ -972,7 +965,7 @@ function MainPage(props: MainPageProps): JSX.Element {
                   </Icon1>
                 </Container>
               </Tab1>
-            </Tab>
+            </Tab0>
             <Tab2>
               <Tab3>
                 <Container1>
