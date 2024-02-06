@@ -1254,7 +1254,7 @@ const Frame34: any = styled('div')(({ theme }: any) => ({
   flexDirection: `column`,
   justifyContent: `flex-start`,
   alignItems: `center`,
-  padding: `16px 0px`,
+  padding: `16px 30px`,
   boxSizing: `border-box`,
   alignSelf: `stretch`,
   flex: `1`,
