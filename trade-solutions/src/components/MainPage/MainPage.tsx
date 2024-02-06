@@ -13,12 +13,7 @@
  **********************************************************************/
 
 import React from 'react';
-import { Typography, Button } from '@mui/material';
-import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
-import FileUploadOutlinedIcon from '@mui/icons-material/FileUploadOutlined';
-import RefreshOutlinedIcon from '@mui/icons-material/RefreshOutlined';
-import PrintIcon from '@mui/icons-material/Print';
-import QuestionMarkOutlinedIcon from '@mui/icons-material/QuestionMarkOutlined';
+import { Typography, Button, SvgIcon } from '@mui/material';
 import VectorImage from 'src/assets/images/mainPage_Vector.png';
 import Vector1Image from 'src/assets/images/mainPage_Vector_1.png';
 import Vector2Image from 'src/assets/images/mainPage_Vector_2.png';
@@ -26,6 +21,11 @@ import Vector3Image from 'src/assets/images/mainPage_Vector_3.png';
 import Vector4Image from 'src/assets/images/mainPage_Vector_4.png';
 import Vector5Image from 'src/assets/images/mainPage_Vector_5.png';
 import { styled } from '@mui/material/styles';
+import FileDownloadOutlined from 'src/components/FileDownloadOutlined/FileDownloadOutlined';
+import FileUploadOutlined from 'src/components/FileUploadOutlined/FileUploadOutlined';
+import RefreshOutlined from 'src/components/RefreshOutlined/RefreshOutlined';
+import PrintFilled from 'src/components/PrintFilled/PrintFilled';
+import QuestionMarkFilled from 'src/components/QuestionMarkFilled/QuestionMarkFilled';
 import DataGridTrade from 'src/components/DataGridTrade/DataGridTrade';
 import { MainPageProps } from 'src/types';
 
@@ -46,7 +46,7 @@ const MainPage1: any = styled('div')({
 });
 
 const Frame25: any = styled('div')(({ theme }: any) => ({
-  backgroundColor: `rgba(238, 238, 238, 1)`,
+  backgroundColor: theme.palette['colors']['grey']['200'],
   borderRadius: `0px`,
   display: `flex`,
   position: `relative`,
@@ -79,15 +79,15 @@ const Frame35: any = styled('div')({
 
 const Typography1: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px`,
-  color: `rgba(0, 0, 0, 0.87)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `16px`,
-  letterSpacing: `0.15000000596046448px`,
-  textDecoration: `none`,
-  lineHeight: `150%`,
-  textTransform: `none`,
+  color: theme.palette['text']['primary'],
+  fontStyle: theme.typography['Typography']['body1'].fontStyle,
+  fontFamily: theme.typography['Typography']['body1'].fontFamily,
+  fontWeight: theme.typography['Typography']['body1'].fontWeight,
+  fontSize: theme.typography['Typography']['body1'].fontSize,
+  letterSpacing: theme.typography['Typography']['body1'].letterSpacing,
+  lineHeight: theme.typography['Typography']['body1'].lineHeight,
+  textDecoration: theme.typography['Typography']['body1'].textDecoration,
+  textTransform: theme.typography['Typography']['body1'].textTransform,
 }));
 
 const Frame36: any = styled('div')({
@@ -140,7 +140,7 @@ const Logo: any = styled('div')(({ theme }: any) => ({
   textAlign: `left`,
   whiteSpace: `pre-wrap`,
   fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 0.6)`,
+  color: theme.palette['text']['secondary'],
   fontStyle: `normal`,
   fontFamily: `Roboto`,
   fontWeight: `500`,
@@ -154,15 +154,15 @@ const Logo: any = styled('div')(({ theme }: any) => ({
 
 const Typography2: any = styled(Typography)(({ theme }: any) => ({
   margin: `0px 0px 0px 30px`,
-  color: `rgba(0, 60, 110, 1)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `20px`,
-  letterSpacing: `0.25px`,
-  textDecoration: `none`,
-  lineHeight: `123.50000143051147%`,
-  textTransform: `none`,
+  color: theme.palette['primary']['main'],
+  fontStyle: theme.typography['Typography']['h4'].fontStyle,
+  fontFamily: theme.typography['Typography']['h4'].fontFamily,
+  fontWeight: theme.typography['Typography']['h4'].fontWeight,
+  fontSize: theme.typography['Typography']['h4'].fontSize,
+  letterSpacing: theme.typography['Typography']['h4'].letterSpacing,
+  lineHeight: theme.typography['Typography']['h4'].lineHeight,
+  textDecoration: theme.typography['Typography']['h4'].textDecoration,
+  textTransform: theme.typography['Typography']['h4'].textTransform,
 }));
 
 const Frame20: any = styled('div')({
@@ -222,7 +222,7 @@ const Button1: any = styled('div')(({ theme }: any) => ({
   textAlign: `left`,
   whiteSpace: `pre-wrap`,
   fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 0.6)`,
+  color: theme.palette['text']['secondary'],
   fontStyle: `normal`,
   fontFamily: `Roboto`,
   fontWeight: `500`,
@@ -316,7 +316,7 @@ const Button2: any = styled('div')(({ theme }: any) => ({
   textAlign: `left`,
   whiteSpace: `pre-wrap`,
   fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 0.6)`,
+  color: theme.palette['text']['secondary'],
   fontStyle: `normal`,
   fontFamily: `Roboto`,
   fontWeight: `500`,
@@ -410,7 +410,7 @@ const Button3: any = styled('div')(({ theme }: any) => ({
   textAlign: `left`,
   whiteSpace: `pre-wrap`,
   fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 0.6)`,
+  color: theme.palette['text']['secondary'],
   fontStyle: `normal`,
   fontFamily: `Roboto`,
   fontWeight: `500`,
@@ -504,7 +504,7 @@ const Button4: any = styled('div')(({ theme }: any) => ({
   textAlign: `left`,
   whiteSpace: `pre-wrap`,
   fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 0.6)`,
+  color: theme.palette['text']['secondary'],
   fontStyle: `normal`,
   fontFamily: `Roboto`,
   fontWeight: `500`,
@@ -598,7 +598,7 @@ const Button5: any = styled('div')(({ theme }: any) => ({
   textAlign: `left`,
   whiteSpace: `pre-wrap`,
   fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 0.6)`,
+  color: theme.palette['text']['secondary'],
   fontStyle: `normal`,
   fontFamily: `Roboto`,
   fontWeight: `500`,
@@ -650,8 +650,7 @@ const Vector4: any = styled('img')({
 });
 
 const Frame33: any = styled('div')(({ theme }: any) => ({
-  backgroundColor: `rgba(238, 238, 238, 1)`,
-  boxShadow: `0px 2px 4px rgba(0, 0, 0, 0.2), 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12)`,
+  backgroundColor: theme.palette['colors']['grey']['200'],
   borderRadius: `0px`,
   display: `flex`,
   position: `relative`,
@@ -743,6 +742,7 @@ const Frame29: any = styled('div')({
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
+  flex: `1`,
   margin: `0px 0px 0px 10px`,
 });
 
@@ -763,15 +763,15 @@ const Typography4: any = styled('div')(({ theme }: any) => ({
   textAlign: `left`,
   whiteSpace: `pre-wrap`,
   fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 0.87)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `24px`,
-  letterSpacing: `0px`,
-  textDecoration: `none`,
-  lineHeight: `116.70000553131104%`,
-  textTransform: `none`,
+  color: theme.palette['text']['primary'],
+  fontStyle: theme.typography['Typography']['h3'].fontStyle,
+  fontFamily: theme.typography['Typography']['h3'].fontFamily,
+  fontWeight: theme.typography['Typography']['h3'].fontWeight,
+  fontSize: theme.typography['Typography']['h3'].fontSize,
+  letterSpacing: theme.typography['Typography']['h3'].letterSpacing,
+  lineHeight: theme.typography['Typography']['h3'].lineHeight,
+  textDecoration: theme.typography['Typography']['h3'].textDecoration,
+  textTransform: theme.typography['Typography']['h3'].textTransform,
   margin: `0px`,
 }));
 
@@ -779,15 +779,15 @@ const Typography5: any = styled('div')(({ theme }: any) => ({
   textAlign: `left`,
   whiteSpace: `pre-wrap`,
   fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 0.87)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `14px`,
-  letterSpacing: `0.17000000178813934px`,
-  textDecoration: `none`,
-  lineHeight: `142.99999475479126%`,
-  textTransform: `none`,
+  color: theme.palette['text']['primary'],
+  fontStyle: theme.typography['Typography']['body2'].fontStyle,
+  fontFamily: theme.typography['Typography']['body2'].fontFamily,
+  fontWeight: theme.typography['Typography']['body2'].fontWeight,
+  fontSize: theme.typography['Typography']['body2'].fontSize,
+  letterSpacing: theme.typography['Typography']['body2'].letterSpacing,
+  lineHeight: theme.typography['Typography']['body2'].lineHeight,
+  textDecoration: theme.typography['Typography']['body2'].textDecoration,
+  textTransform: theme.typography['Typography']['body2'].textTransform,
   margin: `0px`,
 }));
 
@@ -802,12 +802,106 @@ const Frame32: any = styled('div')({
   padding: `0px`,
   boxSizing: `border-box`,
   alignSelf: `stretch`,
-  margin: `0px`,
-  gap: '4px',
+  margin: `0px 0px 0px 10px`,
 });
 
+const IconLeft: any = styled(FileDownloadOutlined)(({ theme }: any) => ({
+  height: `20px`,
+  width: `20px`,
+}));
+
+const Button6: any = styled(Button)(({ theme }: any) => ({
+  margin: `0px`,
+  color: theme.palette['_inherit']['textPrimary']['main'],
+  fontStyle: theme.typography['Components']['button-medium'].fontStyle,
+  fontFamily: theme.typography['Components']['button-medium'].fontFamily,
+  fontWeight: theme.typography['Components']['button-medium'].fontWeight,
+  fontSize: theme.typography['Components']['button-medium'].fontSize,
+  letterSpacing: theme.typography['Components']['button-medium'].letterSpacing,
+  lineHeight: theme.typography['Components']['button-medium'].lineHeight,
+  textDecoration:
+    theme.typography['Components']['button-medium'].textDecoration,
+  textTransform: theme.typography['Components']['button-medium'].textTransform,
+}));
+
+const IconLeft1: any = styled(FileUploadOutlined)(({ theme }: any) => ({
+  height: `20px`,
+  width: `20px`,
+}));
+
+const Button7: any = styled(Button)(({ theme }: any) => ({
+  margin: `0px 0px 0px 4px`,
+  color: theme.palette['_inherit']['textPrimary']['main'],
+  fontStyle: theme.typography['Components']['button-medium'].fontStyle,
+  fontFamily: theme.typography['Components']['button-medium'].fontFamily,
+  fontWeight: theme.typography['Components']['button-medium'].fontWeight,
+  fontSize: theme.typography['Components']['button-medium'].fontSize,
+  letterSpacing: theme.typography['Components']['button-medium'].letterSpacing,
+  lineHeight: theme.typography['Components']['button-medium'].lineHeight,
+  textDecoration:
+    theme.typography['Components']['button-medium'].textDecoration,
+  textTransform: theme.typography['Components']['button-medium'].textTransform,
+}));
+
+const IconLeft2: any = styled(RefreshOutlined)(({ theme }: any) => ({
+  height: `20px`,
+  width: `20px`,
+}));
+
+const Button8: any = styled(Button)(({ theme }: any) => ({
+  margin: `0px 0px 0px 4px`,
+  color: theme.palette['_inherit']['textPrimary']['main'],
+  fontStyle: theme.typography['Components']['button-medium'].fontStyle,
+  fontFamily: theme.typography['Components']['button-medium'].fontFamily,
+  fontWeight: theme.typography['Components']['button-medium'].fontWeight,
+  fontSize: theme.typography['Components']['button-medium'].fontSize,
+  letterSpacing: theme.typography['Components']['button-medium'].letterSpacing,
+  lineHeight: theme.typography['Components']['button-medium'].lineHeight,
+  textDecoration:
+    theme.typography['Components']['button-medium'].textDecoration,
+  textTransform: theme.typography['Components']['button-medium'].textTransform,
+}));
+
+const IconLeft3: any = styled(PrintFilled)(({ theme }: any) => ({
+  height: `20px`,
+  width: `20px`,
+}));
+
+const Button9: any = styled(Button)(({ theme }: any) => ({
+  margin: `0px 0px 0px 4px`,
+  color: theme.palette['_inherit']['textPrimary']['main'],
+  fontStyle: theme.typography['Components']['button-medium'].fontStyle,
+  fontFamily: theme.typography['Components']['button-medium'].fontFamily,
+  fontWeight: theme.typography['Components']['button-medium'].fontWeight,
+  fontSize: theme.typography['Components']['button-medium'].fontSize,
+  letterSpacing: theme.typography['Components']['button-medium'].letterSpacing,
+  lineHeight: theme.typography['Components']['button-medium'].lineHeight,
+  textDecoration:
+    theme.typography['Components']['button-medium'].textDecoration,
+  textTransform: theme.typography['Components']['button-medium'].textTransform,
+}));
+
+const IconLeft4: any = styled(QuestionMarkFilled)(({ theme }: any) => ({
+  height: `20px`,
+  width: `20px`,
+}));
+
+const Button10: any = styled(Button)(({ theme }: any) => ({
+  margin: `0px 0px 0px 4px`,
+  color: theme.palette['_inherit']['textPrimary']['main'],
+  fontStyle: theme.typography['Components']['button-medium'].fontStyle,
+  fontFamily: theme.typography['Components']['button-medium'].fontFamily,
+  fontWeight: theme.typography['Components']['button-medium'].fontWeight,
+  fontSize: theme.typography['Components']['button-medium'].fontSize,
+  letterSpacing: theme.typography['Components']['button-medium'].letterSpacing,
+  lineHeight: theme.typography['Components']['button-medium'].lineHeight,
+  textDecoration:
+    theme.typography['Components']['button-medium'].textDecoration,
+  textTransform: theme.typography['Components']['button-medium'].textTransform,
+}));
+
 const Frame34: any = styled('div')(({ theme }: any) => ({
-  backgroundColor: `rgba(238, 238, 238, 1)`,
+  backgroundColor: theme.palette['colors']['grey']['200'],
   borderRadius: `0px`,
   display: `flex`,
   position: `relative`,
@@ -824,8 +918,8 @@ const Frame34: any = styled('div')(({ theme }: any) => ({
 }));
 
 const Frame16: any = styled('div')(({ theme }: any) => ({
-  backgroundColor: `rgba(255, 255, 255, 1)`,
-  boxShadow: `0px 2px 4px rgba(0, 0, 0, 0.2), 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12)`,
+  backgroundColor: theme.palette['background']['default'],
+  boxShadow: theme.customShadows['elevation']['4'].boxShadow,
   borderRadius: `4px`,
   display: `flex`,
   position: `relative`,
@@ -842,7 +936,7 @@ const Frame16: any = styled('div')(({ theme }: any) => ({
 }));
 
 const DataGridHeader: any = styled('div')(({ theme }: any) => ({
-  backgroundColor: `rgba(0, 60, 110, 1)`,
+  backgroundColor: theme.palette['primary']['main'],
   borderRadius: `4px 4px 0px 0px`,
   display: `flex`,
   position: `relative`,
@@ -856,7 +950,7 @@ const DataGridHeader: any = styled('div')(({ theme }: any) => ({
   margin: `0px`,
 }));
 
-const Typography16: any = styled('div')({
+const Typography6: any = styled('div')({
   borderRadius: `0px`,
   display: `flex`,
   position: `relative`,
@@ -870,19 +964,19 @@ const Typography16: any = styled('div')({
   margin: `0px`,
 });
 
-const Typography17: any = styled('div')(({ theme }: any) => ({
+const Typography7: any = styled('div')(({ theme }: any) => ({
   textAlign: `left`,
   whiteSpace: `pre-wrap`,
   fontSynthesis: `none`,
-  color: `rgba(255, 255, 255, 1)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `16px`,
-  letterSpacing: `0.15000000596046448px`,
-  textDecoration: `none`,
-  lineHeight: `150%`,
-  textTransform: `none`,
+  color: theme.palette['primary']['contrast'],
+  fontStyle: theme.typography['Typography']['body1'].fontStyle,
+  fontFamily: theme.typography['Typography']['body1'].fontFamily,
+  fontWeight: theme.typography['Typography']['body1'].fontWeight,
+  fontSize: theme.typography['Typography']['body1'].fontSize,
+  letterSpacing: theme.typography['Typography']['body1'].letterSpacing,
+  lineHeight: theme.typography['Typography']['body1'].lineHeight,
+  textDecoration: theme.typography['Typography']['body1'].textDecoration,
+  textTransform: theme.typography['Typography']['body1'].textTransform,
   margin: `0px`,
 }));
 
@@ -1018,47 +1112,62 @@ function MainPage(props: MainPageProps): JSX.Element {
               </Typography3>
               <Typography5>{`View and upload trade templates`}</Typography5>
             </Frame29>
+            <Frame32>
+              <Button6
+                size={'medium'}
+                color={'inherit'}
+                disabled={false}
+                variant={'contained'}
+                startIcon={<IconLeft />}
+              >
+                {'Template Download'}
+              </Button6>
+              <Button7
+                size={'medium'}
+                color={'inherit'}
+                disabled={false}
+                variant={'contained'}
+                startIcon={<IconLeft1 />}
+              >
+                {'Template Upload'}
+              </Button7>
+              <Button8
+                size={'medium'}
+                color={'inherit'}
+                disabled={false}
+                variant={'contained'}
+                startIcon={<IconLeft2 />}
+              >
+                {'Refresh'}
+              </Button8>
+              <Button9
+                size={'medium'}
+                color={'inherit'}
+                disabled={false}
+                variant={'contained'}
+                startIcon={<IconLeft3 />}
+              >
+                {'Print'}
+              </Button9>
+              <Button10
+                size={'medium'}
+                color={'inherit'}
+                disabled={false}
+                variant={'contained'}
+                startIcon={<IconLeft4 />}
+              >
+                {'Help'}
+              </Button10>
+            </Frame32>
           </Frame30>
-          <Frame32>
-            <Button
-              variant="contained"
-              startIcon={<FileDownloadOutlinedIcon />}
-              size="small"
-              color="inherit">Template Download
-            </Button>
-            <Button
-              variant="contained"
-              startIcon={<FileUploadOutlinedIcon />}
-              size="small"
-              color="inherit">Template Upload
-            </Button>
-            <Button
-              variant="contained"
-              startIcon={<RefreshOutlinedIcon />}
-              size="small"
-              color="inherit">Refresh
-            </Button>
-            <Button
-              variant="contained"
-              startIcon={<PrintIcon />}
-              size="small"
-              color="inherit">Print
-            </Button>
-            <Button
-              variant="contained"
-              startIcon={<QuestionMarkOutlinedIcon />}
-              size="small"
-              color="inherit">Help
-            </Button>
-          </Frame32>
         </Frame31>
       </Frame33>
       <Frame34>
         <Frame16>
           <DataGridHeader>
-            <Typography16>
-              <Typography17>{`TRADE SOLUTIONS`}</Typography17>
-            </Typography16>
+            <Typography6>
+              <Typography7>{`TRADE SOLUTIONS`}</Typography7>
+            </Typography6>
           </DataGridHeader>
           <DataGridContainer>
             <DataGridTrade1 />
