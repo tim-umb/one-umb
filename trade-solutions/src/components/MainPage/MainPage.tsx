@@ -1,13 +1,7 @@
 import React from 'react';
-import { Typography, Button } from '@mui/material'
+import { Typography } from '@mui/material'
 import TopMenuItem from '../Menu/menu';
-import Vector5Image from 'src/assets/images/mainPage_Vector_5.png';
 import { styled } from '@mui/material/styles';
-import PrintIcon from '@mui/icons-material/Print';
-import QuestionMarkOutlinedIcon from '@mui/icons-material/QuestionMark';
-import RefreshOutlinedIcon from '@mui/icons-material/Refresh';
-import FileUploadOutlinedIcon from '@mui/icons-material/FileUploadOutlined';
-import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 import DataGridTrade from 'src/components/DataGridTrade/DataGridTrade';
 import { MainPageProps } from 'src/types';
 import SVGLogo from '../Logo/Logo';
