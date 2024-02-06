@@ -1275,7 +1275,6 @@ const Frame16: any = styled('div')(({ theme }: any) => ({
   padding: `0px`,
   boxSizing: `border-box`,
   alignSelf: `stretch`,
-  flex: `1`,
   margin: '0px auto',
   maxWidth: '1440px',
   width: '100%',
@@ -1337,14 +1336,13 @@ const DataGridContainer: any = styled('div')({
   padding: `0px`,
   boxSizing: `border-box`,
   alignSelf: `stretch`,
-  flex: `1`,
   margin: `0px`,
   overflow: `hidden`,
 });
 
 const DataGridTrade1: any = styled(DataGridTrade)(({ theme }: any) => ({
   alignSelf: `stretch`,
-  flex: `1`,
+  height: `400px`,
   margin: `0px`,
 }));
 
