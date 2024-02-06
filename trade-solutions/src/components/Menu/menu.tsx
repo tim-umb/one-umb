@@ -1,11 +1,7 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import styled from '@emotion/styled';
 import { Icon } from '@mui/material';
-import useMenu from './useMenu';
 import { MenuButtonProps } from 'src/types';
 import Dashboard from '../Dashboard/Dashboard';
 import Accounts from '../Accounts/Accounts';
