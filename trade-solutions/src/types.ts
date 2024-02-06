@@ -28,5 +28,5 @@ export interface PageHeaderProps {
 }
 
 export interface MenuButtonProps {
-
+  classname?: any;
 }
