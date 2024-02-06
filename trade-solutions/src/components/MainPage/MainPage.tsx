@@ -26,7 +26,7 @@ import Vector8Image from 'src/assets/images/mainPage_Vector_8.png';
 import Vector9Image from 'src/assets/images/mainPage_Vector_9.png';
 import Vector10Image from 'src/assets/images/mainPage_Vector_10.png';
 import { styled } from '@mui/material/styles';
-import DataGridTrade from '../DataGridTrade';
+import DataGridTrade from 'src/components/DataGridTrade/DataGridTrade';
 import { MainPageProps } from 'src/types';
 
 const MainPage1: any = styled('div')({
@@ -72,8 +72,9 @@ const Frame35: any = styled('div')({
   padding: `0px`,
   boxSizing: `border-box`,
   alignSelf: `stretch`,
-  margin: `0px`,
+  margin: '0px auto',
   maxWidth: '1440px',
+  width: '100%',
 });
 
 const Typography1: any = styled(Typography)(({ theme }: any) => ({
