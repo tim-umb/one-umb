@@ -14,17 +14,17 @@
 
 import React from 'react';
 import { Typography, Button } from '@mui/material';
+import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
+import FileUploadOutlinedIcon from '@mui/icons-material/FileUploadOutlined';
+import RefreshOutlinedIcon from '@mui/icons-material/RefreshOutlined';
+import PrintIcon from '@mui/icons-material/Print';
+import QuestionMarkOutlinedIcon from '@mui/icons-material/QuestionMarkOutlined';
 import VectorImage from 'src/assets/images/mainPage_Vector.png';
 import Vector1Image from 'src/assets/images/mainPage_Vector_1.png';
 import Vector2Image from 'src/assets/images/mainPage_Vector_2.png';
 import Vector3Image from 'src/assets/images/mainPage_Vector_3.png';
 import Vector4Image from 'src/assets/images/mainPage_Vector_4.png';
 import Vector5Image from 'src/assets/images/mainPage_Vector_5.png';
-import Vector6Image from 'src/assets/images/mainPage_Vector_6.png';
-import Vector7Image from 'src/assets/images/mainPage_Vector_7.png';
-import Vector8Image from 'src/assets/images/mainPage_Vector_8.png';
-import Vector9Image from 'src/assets/images/mainPage_Vector_9.png';
-import Vector10Image from 'src/assets/images/mainPage_Vector_10.png';
 import { styled } from '@mui/material/styles';
 import DataGridTrade from 'src/components/DataGridTrade/DataGridTrade';
 import { MainPageProps } from 'src/types';
@@ -803,447 +803,8 @@ const Frame32: any = styled('div')({
   boxSizing: `border-box`,
   alignSelf: `stretch`,
   margin: `0px`,
+  gap: '4px',
 });
-
-const ActionButton: any = styled('div')({
-  borderRadius: `0px`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `row`,
-  justifyContent: `flex-start`,
-  alignItems: `center`,
-  padding: `8px 16px`,
-  boxSizing: `border-box`,
-  margin: `0px`,
-});
-
-const Icon7: any = styled('div')({
-  borderRadius: `0px`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `row`,
-  justifyContent: `flex-start`,
-  alignItems: `flex-start`,
-  padding: `0px`,
-  boxSizing: `border-box`,
-  margin: `0px`,
-});
-
-const FileDownloadOutlined: any = styled('div')({
-  borderRadius: `0px`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `row`,
-  justifyContent: `flex-start`,
-  alignItems: `flex-start`,
-  padding: `0px`,
-  boxSizing: `border-box`,
-  width: `24px`,
-  height: `24px`,
-  margin: `0px`,
-  overflow: `hidden`,
-});
-
-const Group: any = styled('div')({
-  display: `flex`,
-  position: `absolute`,
-  isolation: `isolate`,
-  flexDirection: `row`,
-  justifyContent: `flex-start`,
-  alignItems: `flex-start`,
-  padding: `0px`,
-  boxSizing: `border-box`,
-  width: `16px`,
-  height: `16px`,
-  left: `4px`,
-  top: `4px`,
-});
-
-const Vector6: any = styled('img')({
-  height: `16px`,
-  width: `16px`,
-  position: `absolute`,
-  left: `0px`,
-  top: `0px`,
-});
-
-const Typography6: any = styled('div')({
-  borderRadius: `0px`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `column`,
-  justifyContent: `flex-start`,
-  alignItems: `flex-start`,
-  padding: `0px`,
-  boxSizing: `border-box`,
-  margin: `0px 0px 0px 10px`,
-});
-
-const Typography7: any = styled('div')(({ theme }: any) => ({
-  textAlign: `left`,
-  whiteSpace: `pre-wrap`,
-  fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 0.87)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `14px`,
-  letterSpacing: `0.17000000178813934px`,
-  textDecoration: `none`,
-  lineHeight: `142.99999475479126%`,
-  textTransform: `none`,
-  margin: `0px`,
-}));
-
-const ActionButton1: any = styled('div')({
-  borderRadius: `0px`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `row`,
-  justifyContent: `flex-start`,
-  alignItems: `center`,
-  padding: `8px 16px`,
-  boxSizing: `border-box`,
-  margin: `0px 0px 0px 4px`,
-});
-
-const Icon8: any = styled('div')({
-  borderRadius: `0px`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `row`,
-  justifyContent: `flex-start`,
-  alignItems: `flex-start`,
-  padding: `0px`,
-  boxSizing: `border-box`,
-  margin: `0px`,
-});
-
-const FileUploadOutlined: any = styled('div')({
-  borderRadius: `0px`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `row`,
-  justifyContent: `flex-start`,
-  alignItems: `flex-start`,
-  padding: `0px`,
-  boxSizing: `border-box`,
-  width: `24px`,
-  height: `24px`,
-  margin: `0px`,
-  overflow: `hidden`,
-});
-
-const Group1: any = styled('div')({
-  display: `flex`,
-  position: `absolute`,
-  isolation: `isolate`,
-  flexDirection: `row`,
-  justifyContent: `flex-start`,
-  alignItems: `flex-start`,
-  padding: `0px`,
-  boxSizing: `border-box`,
-  width: `16px`,
-  height: `16px`,
-  left: `4px`,
-  top: `4px`,
-});
-
-const Vector7: any = styled('img')({
-  height: `16px`,
-  width: `16px`,
-  position: `absolute`,
-  left: `0px`,
-  top: `0px`,
-});
-
-const Typography8: any = styled('div')({
-  borderRadius: `0px`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `column`,
-  justifyContent: `flex-start`,
-  alignItems: `flex-start`,
-  padding: `0px`,
-  boxSizing: `border-box`,
-  margin: `0px 0px 0px 10px`,
-});
-
-const Typography9: any = styled('div')(({ theme }: any) => ({
-  textAlign: `left`,
-  whiteSpace: `pre-wrap`,
-  fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 0.87)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `14px`,
-  letterSpacing: `0.17000000178813934px`,
-  textDecoration: `none`,
-  lineHeight: `142.99999475479126%`,
-  textTransform: `none`,
-  margin: `0px`,
-}));
-
-const ActionButton2: any = styled('div')({
-  borderRadius: `0px`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `row`,
-  justifyContent: `flex-start`,
-  alignItems: `center`,
-  padding: `8px 16px`,
-  boxSizing: `border-box`,
-  margin: `0px 0px 0px 4px`,
-});
-
-const Icon9: any = styled('div')({
-  borderRadius: `0px`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `row`,
-  justifyContent: `flex-start`,
-  alignItems: `flex-start`,
-  padding: `0px`,
-  boxSizing: `border-box`,
-  margin: `0px`,
-});
-
-const RefreshOutlined: any = styled('div')({
-  borderRadius: `0px`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `row`,
-  justifyContent: `flex-start`,
-  alignItems: `flex-start`,
-  padding: `0px`,
-  boxSizing: `border-box`,
-  width: `24px`,
-  height: `24px`,
-  margin: `0px`,
-  overflow: `hidden`,
-});
-
-const Vector8: any = styled('img')({
-  height: `16px`,
-  width: `15.99px`,
-  position: `absolute`,
-  left: `4px`,
-  top: `4px`,
-});
-
-const Typography10: any = styled('div')({
-  borderRadius: `0px`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `column`,
-  justifyContent: `flex-start`,
-  alignItems: `flex-start`,
-  padding: `0px`,
-  boxSizing: `border-box`,
-  margin: `0px 0px 0px 10px`,
-});
-
-const Typography11: any = styled('div')(({ theme }: any) => ({
-  textAlign: `left`,
-  whiteSpace: `pre-wrap`,
-  fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 0.87)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `14px`,
-  letterSpacing: `0.17000000178813934px`,
-  textDecoration: `none`,
-  lineHeight: `142.99999475479126%`,
-  textTransform: `none`,
-  margin: `0px`,
-}));
-
-const ActionButton3: any = styled('div')({
-  borderRadius: `0px`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `row`,
-  justifyContent: `flex-start`,
-  alignItems: `center`,
-  padding: `8px 16px`,
-  boxSizing: `border-box`,
-  margin: `0px 0px 0px 4px`,
-});
-
-const Icon10: any = styled('div')({
-  borderRadius: `0px`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `row`,
-  justifyContent: `flex-start`,
-  alignItems: `flex-start`,
-  padding: `0px`,
-  boxSizing: `border-box`,
-  margin: `0px`,
-});
-
-const PrintFilled: any = styled('div')({
-  borderRadius: `0px`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `row`,
-  justifyContent: `flex-start`,
-  alignItems: `flex-start`,
-  padding: `0px`,
-  boxSizing: `border-box`,
-  width: `24px`,
-  height: `24px`,
-  margin: `0px`,
-  overflow: `hidden`,
-});
-
-const Vector9: any = styled('img')({
-  height: `18px`,
-  width: `20px`,
-  position: `absolute`,
-  left: `2px`,
-  top: `3px`,
-});
-
-const Typography12: any = styled('div')({
-  borderRadius: `0px`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `column`,
-  justifyContent: `flex-start`,
-  alignItems: `flex-start`,
-  padding: `0px`,
-  boxSizing: `border-box`,
-  margin: `0px 0px 0px 10px`,
-});
-
-const Typography13: any = styled('div')(({ theme }: any) => ({
-  textAlign: `left`,
-  whiteSpace: `pre-wrap`,
-  fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 0.87)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `14px`,
-  letterSpacing: `0.17000000178813934px`,
-  textDecoration: `none`,
-  lineHeight: `142.99999475479126%`,
-  textTransform: `none`,
-  margin: `0px`,
-}));
-
-const ActionButton4: any = styled('div')({
-  borderRadius: `0px`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `row`,
-  justifyContent: `flex-start`,
-  alignItems: `center`,
-  padding: `8px 16px`,
-  boxSizing: `border-box`,
-  margin: `0px 0px 0px 4px`,
-});
-
-const Icon11: any = styled('div')({
-  borderRadius: `0px`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `row`,
-  justifyContent: `flex-start`,
-  alignItems: `flex-start`,
-  padding: `0px`,
-  boxSizing: `border-box`,
-  margin: `0px`,
-});
-
-const QuestionMarkOutlined: any = styled('div')({
-  borderRadius: `0px`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `row`,
-  justifyContent: `flex-start`,
-  alignItems: `flex-start`,
-  padding: `0px`,
-  boxSizing: `border-box`,
-  width: `24px`,
-  height: `24px`,
-  margin: `0px`,
-  overflow: `hidden`,
-});
-
-const Group2: any = styled('div')({
-  display: `flex`,
-  position: `absolute`,
-  isolation: `isolate`,
-  flexDirection: `row`,
-  justifyContent: `flex-start`,
-  alignItems: `flex-start`,
-  padding: `0px`,
-  boxSizing: `border-box`,
-  width: `10.92px`,
-  height: `19px`,
-  left: `7px`,
-  top: `3px`,
-});
-
-const Vector10: any = styled('img')({
-  height: `19px`,
-  width: `10.92px`,
-  position: `absolute`,
-  left: `0px`,
-  top: `0px`,
-});
-
-const Typography14: any = styled('div')({
-  borderRadius: `0px`,
-  display: `flex`,
-  position: `relative`,
-  isolation: `isolate`,
-  flexDirection: `column`,
-  justifyContent: `flex-start`,
-  alignItems: `flex-start`,
-  padding: `0px`,
-  boxSizing: `border-box`,
-  margin: `0px 0px 0px 10px`,
-});
-
-const Typography15: any = styled('div')(({ theme }: any) => ({
-  textAlign: `left`,
-  whiteSpace: `pre-wrap`,
-  fontSynthesis: `none`,
-  color: `rgba(0, 0, 0, 0.87)`,
-  fontStyle: `normal`,
-  fontFamily: `Roboto`,
-  fontWeight: `400`,
-  fontSize: `14px`,
-  letterSpacing: `0.17000000178813934px`,
-  textDecoration: `none`,
-  lineHeight: `142.99999475479126%`,
-  textTransform: `none`,
-  margin: `0px`,
-}));
 
 const Frame34: any = styled('div')(({ theme }: any) => ({
   backgroundColor: `rgba(238, 238, 238, 1)`,
@@ -1459,67 +1020,36 @@ function MainPage(props: MainPageProps): JSX.Element {
             </Frame29>
           </Frame30>
           <Frame32>
-            <Button variant="contained" color="primary">Template Download</Button>
-            <ActionButton>
-              <Icon7>
-                <FileDownloadOutlined>
-                  <Group>
-                    <Vector6 src={Vector6Image} loading="lazy" alt={'Vector'} />
-                  </Group>
-                </FileDownloadOutlined>
-              </Icon7>
-              <Typography6>
-                <Typography7>{`Template Download`}</Typography7>
-              </Typography6>
-            </ActionButton>
-            <ActionButton1>
-              <Icon8>
-                <FileUploadOutlined>
-                  <Group1>
-                    <Vector7 src={Vector7Image} loading="lazy" alt={'Vector'} />
-                  </Group1>
-                </FileUploadOutlined>
-              </Icon8>
-              <Typography8>
-                <Typography9>{`Template Upload`}</Typography9>
-              </Typography8>
-            </ActionButton1>
-            <ActionButton2>
-              <Icon9>
-                <RefreshOutlined>
-                  <Vector8 src={Vector8Image} loading="lazy" alt={'Vector'} />
-                </RefreshOutlined>
-              </Icon9>
-              <Typography10>
-                <Typography11>{`Refresh`}</Typography11>
-              </Typography10>
-            </ActionButton2>
-            <ActionButton3>
-              <Icon10>
-                <PrintFilled>
-                  <Vector9 src={Vector9Image} loading="lazy" alt={'Vector'} />
-                </PrintFilled>
-              </Icon10>
-              <Typography12>
-                <Typography13>{`Print`}</Typography13>
-              </Typography12>
-            </ActionButton3>
-            <ActionButton4>
-              <Icon11>
-                <QuestionMarkOutlined>
-                  <Group2>
-                    <Vector10
-                      src={Vector10Image}
-                      loading="lazy"
-                      alt={'Vector'}
-                    />
-                  </Group2>
-                </QuestionMarkOutlined>
-              </Icon11>
-              <Typography14>
-                <Typography15>{`Help`}</Typography15>
-              </Typography14>
-            </ActionButton4>
+            <Button
+              variant="contained"
+              startIcon={<FileDownloadOutlinedIcon />}
+              size="small"
+              color="inherit">Template Download
+            </Button>
+            <Button
+              variant="contained"
+              startIcon={<FileUploadOutlinedIcon />}
+              size="small"
+              color="inherit">Template Upload
+            </Button>
+            <Button
+              variant="contained"
+              startIcon={<RefreshOutlinedIcon />}
+              size="small"
+              color="inherit">Refresh
+            </Button>
+            <Button
+              variant="contained"
+              startIcon={<PrintIcon />}
+              size="small"
+              color="inherit">Print
+            </Button>
+            <Button
+              variant="contained"
+              startIcon={<QuestionMarkOutlinedIcon />}
+              size="small"
+              color="inherit">Help
+            </Button>
           </Frame32>
         </Frame31>
       </Frame33>
