@@ -21,11 +21,11 @@ import Vector3Image from 'src/assets/images/mainPage_Vector_3.png';
 import Vector4Image from 'src/assets/images/mainPage_Vector_4.png';
 import Vector5Image from 'src/assets/images/mainPage_Vector_5.png';
 import { styled } from '@mui/material/styles';
-import FileDownloadOutlined from 'src/components/FileDownloadOutlined/FileDownloadOutlined';
-import FileUploadOutlined from 'src/components/FileUploadOutlined/FileUploadOutlined';
-import RefreshOutlined from 'src/components/RefreshOutlined/RefreshOutlined';
-import PrintFilled from 'src/components/PrintFilled/PrintFilled';
-import QuestionMarkFilled from 'src/components/QuestionMarkFilled/QuestionMarkFilled';
+import PrintIcon from '@mui/icons-material/Print';
+import QuestionMarkOutlinedIcon from '@mui/icons-material/QuestionMark';
+import RefreshOutlinedIcon from '@mui/icons-material/Refresh';
+import FileUploadOutlinedIcon from '@mui/icons-material/FileUploadOutlined';
+import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 import DataGridTrade from 'src/components/DataGridTrade/DataGridTrade';
 import { MainPageProps } from 'src/types';
 
@@ -805,7 +805,7 @@ const Frame32: any = styled('div')({
   margin: `0px 0px 0px 10px`,
 });
 
-const IconLeft: any = styled(FileDownloadOutlined)(({ theme }: any) => ({
+const IconLeft: any = styled(FileDownloadOutlinedIcon)(({ theme }: any) => ({
   height: `20px`,
   width: `20px`,
 }));
@@ -824,7 +824,7 @@ const Button6: any = styled(Button)(({ theme }: any) => ({
   textTransform: theme.typography['Components']['button-medium'].textTransform,
 }));
 
-const IconLeft1: any = styled(FileUploadOutlined)(({ theme }: any) => ({
+const IconLeft1: any = styled(FileUploadOutlinedIcon)(({ theme }: any) => ({
   height: `20px`,
   width: `20px`,
 }));
@@ -843,7 +843,7 @@ const Button7: any = styled(Button)(({ theme }: any) => ({
   textTransform: theme.typography['Components']['button-medium'].textTransform,
 }));
 
-const IconLeft2: any = styled(RefreshOutlined)(({ theme }: any) => ({
+const IconLeft2: any = styled(RefreshOutlinedIcon)(({ theme }: any) => ({
   height: `20px`,
   width: `20px`,
 }));
@@ -862,7 +862,7 @@ const Button8: any = styled(Button)(({ theme }: any) => ({
   textTransform: theme.typography['Components']['button-medium'].textTransform,
 }));
 
-const IconLeft3: any = styled(PrintFilled)(({ theme }: any) => ({
+const IconLeft3: any = styled(PrintIcon)(({ theme }: any) => ({
   height: `20px`,
   width: `20px`,
 }));
@@ -881,7 +881,7 @@ const Button9: any = styled(Button)(({ theme }: any) => ({
   textTransform: theme.typography['Components']['button-medium'].textTransform,
 }));
 
-const IconLeft4: any = styled(QuestionMarkFilled)(({ theme }: any) => ({
+const IconLeft4: any = styled(QuestionMarkOutlinedIcon)(({ theme }: any) => ({
   height: `20px`,
   width: `20px`,
 }));
