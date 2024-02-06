@@ -23,6 +23,10 @@ export interface TabPanelProps {
   value: number;
 }
 
+export interface PageHeaderProps {
+  classname?: any;
+}
+
 export interface MenuButtonProps {
 
 }
