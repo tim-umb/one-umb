@@ -117,8 +117,9 @@ const Frame28: any = styled('div')({
   padding: `0px`,
   boxSizing: `border-box`,
   alignSelf: `stretch`,
-  margin: `0px`,
+  margin: '0px auto',
   maxWidth: '1440px',
+  width: '100%',
 });
 
 const Frame27: any = styled('div')({
