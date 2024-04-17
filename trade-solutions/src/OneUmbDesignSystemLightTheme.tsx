@@ -3,6 +3,7 @@ import React from 'react';
 import { createTheme } from "@mui/material/styles";
 
 import SvgIcon from '@mui/material/SvgIcon';
+import { TypeText } from '@mui/material/styles';
 
 import { ReactComponent as CheckBoxOutlineBlank } from "src/assets/images/_CheckBoxOutlineBlankOutlined.svg"; 
 import { ReactComponent as IndeterminateCheckBo } from "src/assets/images/_IndeterminateCheckBoxFilled.svg"; 
@@ -11,6 +12,7 @@ import { ReactComponent as ErrorOutline } from "src/assets/images/_ErrorOutline.
 import { ReactComponent as WarningAmberOutlined } from "src/assets/images/_WarningAmberOutlined.svg"; 
 import { ReactComponent as InfoOutlined } from "src/assets/images/_InfoOutlined.svg"; 
 import { ReactComponent as CheckCircleOutlined } from "src/assets/images/_CheckCircleOutlined.svg"; 
+
   
 const globalTheme: any = createTheme({
   palette: {

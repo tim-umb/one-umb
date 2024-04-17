@@ -29,4 +29,11 @@ export interface PageHeaderProps {
 
 export interface MenuButtonProps {
   classname?: any;
+  component?: any;
+}
+
+export interface Link1Props {
+  classname?: any;
+  component?: any;
+  onChange?: any;
 }

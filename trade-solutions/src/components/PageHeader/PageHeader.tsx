@@ -1,6 +1,7 @@
-import React from 'react';
-import { Typography, Button } from '@mui/material'
-import TopMenuItem from '../Menu/menu';
+import React, { useState } from 'react';
+import Dialog from '@mui/material/Dialog';
+import DialogTitle from '@mui/material/DialogTitle';
+import Button from '@mui/material/Button'
 import Vector5Image from 'src/assets/images/mainPage_Vector_5.png';
 import { styled } from '@mui/material/styles';
 import PrintIcon from '@mui/icons-material/Print';
@@ -8,10 +9,10 @@ import QuestionMarkOutlinedIcon from '@mui/icons-material/QuestionMark';
 import RefreshOutlinedIcon from '@mui/icons-material/Refresh';
 import FileUploadOutlinedIcon from '@mui/icons-material/FileUploadOutlined';
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
-import DataGridTrade from 'src/components/DataGridTrade/DataGridTrade';
-import { MainPageProps } from 'src/types';
-import SVGLogo from '../Logo/Logo';
-import { PageHeaderProps } from 'src/types';
+import { Link1Props, PageHeaderProps } from 'src/types';
+import { MenuButtonProps } from 'src/types';
+import { Box, DialogActions, DialogContent, Divider, ListItem, MenuItem } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const Frame30: any = styled('div')({
     borderRadius: `0px`,
@@ -77,6 +78,22 @@ const Frame29: any = styled('div')({
     flex: `1`,
     margin: `0px 0px 0px 10px`,
 });
+
+const Typography2: any = styled('div')(({ theme }: any) => ({
+    textAlign: `left`,
+    whiteSpace: `pre-wrap`,
+    fontSynthesis: `none`,
+    color: theme.palette['text']['secondary'],
+    fontStyle: theme.typography['Typography']['body1'].fontStyle,
+    fontFamily: theme.typography['Typography']['body1'].fontFamily,
+    fontWeight: theme.typography['Typography']['body1'].fontWeight,
+    fontSize: theme.typography['Typography']['body1'].fontSize,
+    letterSpacing: theme.typography['Typography']['body1'].letterSpacing,
+    lineHeight: theme.typography['Typography']['body1'].lineHeight,
+    textDecoration: theme.typography['Typography']['body1'].textDecoration,
+    textTransform: theme.typography['Typography']['body1'].textTransform,
+    margin: `0px`,
+}));
 
 const Typography3: any = styled('div')({
     borderRadius: `0px`,
@@ -162,7 +179,7 @@ const IconLeft4: any = styled(QuestionMarkOutlinedIcon)(({ theme }: any) => ({
     width: `20px`,
 }));
 
-const MenuButton = styled(Button)(({ theme }) => ({
+const MenuButton = styled(Button)<MenuButtonProps>(({ theme }) => ({
     boxShadow: 'none',
     backgroundColor: 'transparent',
     color: theme.palette['text']['secondary'],
@@ -173,7 +190,43 @@ const MenuButton = styled(Button)(({ theme }) => ({
     },
 }));
 
+const Link1 = styled(Button)<Link1Props>(({ theme }) => ({
+    color: theme.palette['primary']['main'],
+    backgroundColor: 'transparent',
+    textTransform: 'unset',
+    fontWeight: 'normal',
+    '&:hover': {
+        color: theme.palette['primary']['dark'],
+        backgroundColor: 'transparent',
+        textDecoration: 'underline',
+    },
+}));
+
+const VisuallyHiddenInput = styled('input')({
+    clip: 'rect(0 0 0 0)',
+    clipPath: 'inset(50%)',
+    height: 1,
+    overflow: 'hidden',
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    whiteSpace: 'nowrap',
+    width: 1,
+});
+
 export default function PageHeader(props: PageHeaderProps) {
+
+    const [open, setOpen] = useState(false);
+
+    const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        // Open the dialog
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        // Close the dialog
+        setOpen(false);
+    };
 
     return (
         <Frame30>
@@ -199,14 +252,55 @@ export default function PageHeader(props: PageHeaderProps) {
                     {'Template Download'}
                 </MenuButton>
                 <MenuButton
+                    component="label"
                     size={'medium'}
                     color={'inherit'}
                     disabled={false}
                     variant={'contained'}
                     startIcon={<IconLeft1 />}
+                    tabIndex={-1}
                 >
                     {'Template Upload'}
+                    <VisuallyHiddenInput type="file" onChange={handleFileChange} />
                 </MenuButton>
+                <Dialog
+                    open={open}
+                    onClose={handleClose}
+                    aria-labelledby="alert-dialog-title"
+                    aria-describedby="alert-dialog-description"
+                    fullWidth={true}
+                    maxWidth="sm"
+                >
+                    <Box sx={{ gap: 2, display: 'flex', flexDirection: 'column' }}>
+                        <DialogTitle id="alert-dialog-title">
+                            <Typography4>Review File Upload</Typography4>
+                            <Typography2>Please ensure you've selected the correct file:</Typography2>
+                        </DialogTitle>
+                        <DialogContent sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', py: 0 }}>
+                            <MenuItem sx={{ p: 1 }}>
+                                <Box sx={{ display: 'flex', alignItems: 'center', width: '100%' }}>
+                                    {'Attachment_1.jpg'}
+                                    <Link1
+                                        component="label"
+                                        style={{ marginLeft: 'auto' }}
+                                    >
+                                        Select a different file
+                                        <VisuallyHiddenInput type="file" onChange={handleFileChange} />
+                                    </Link1>
+                                </Box>
+                            </MenuItem>
+                            <Divider style={{ margin: '0' }} />
+                        </DialogContent>
+                        <DialogActions>
+                            <Button onClick={handleClose} variant="contained" color="primary" autoFocus>
+                                Upload
+                            </Button>
+                            <Button onClick={handleClose} color="primary">
+                                Cancel
+                            </Button>
+                        </DialogActions>
+                    </Box>
+                </Dialog>
                 <MenuButton
                     size={'medium'}
                     color={'inherit'}
