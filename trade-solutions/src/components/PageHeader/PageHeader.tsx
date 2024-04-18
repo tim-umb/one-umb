@@ -262,8 +262,9 @@ export default function PageHeader(props: PageHeaderProps) {
                     tabIndex={-1}
                 >
                     {'Template Upload'}
-                    <VisuallyHiddenInput type="file" onChange={handleFileChange} />
+                    <VisuallyHiddenInput type="file" onChange={handleFileChange} /> {/* Handle file upload */}
                 </MenuButton>
+                {/* Confirmation dialog toggles after user selects file to upload */}
                 <Dialog
                     open={open}
                     onClose={handleClose}
@@ -302,6 +303,7 @@ export default function PageHeader(props: PageHeaderProps) {
                         </DialogActions>
                     </Box>
                 </Dialog>
+                {/* End confirmation dialog */}
                 <MenuButton
                     size={'medium'}
                     color={'inherit'}
