@@ -202,6 +202,7 @@ const Link1 = styled(Button)<Link1Props>(({ theme }) => ({
     },
 }));
 
+//This component handles the file upload dialog
 const VisuallyHiddenInput = styled('input')({
     clip: 'rect(0 0 0 0)',
     clipPath: 'inset(50%)',
